@@ -1,0 +1,168 @@
+<head>
+    <meta charset="UTF-8">
+    <!-- import lib -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/fonticons/css/all.css">
+    <!-- import reset' -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <!-- import root -->
+    <link rel="stylesheet" href="./assets/css/root.css">
+<!--  import nav -->
+    <link rel="stylesheet" href="/assets/css/nav.css">
+    <!-- import layout -->
+     <link rel="stylesheet" href="./assets/css/layout.css">
+     <!-- link tour  -->
+      <link rel="stylesheet" href="./assets/css/tour.css">
+
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+      
+    
+    <title>Tour Du Lịch | Team20</title>
+</head>
+
+<body>
+  
+
+  <div class="wrapper">
+<!-- header section -->
+<div class="header w-100" style="height: 60px;">
+  <!--navbar start-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary position-fixed" style="top: 0; left: 0; right: 0; z-index:1;">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="color: white;"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link "  href="/">Trang chủ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/tour.html">Tour</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">Giới thiệu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Liên hệ</a>
+          </li>
+    
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar end -->
+  <div class="d-flex justify-content-center align-items-center gap-4"
+  style="z-index: 1; position: absolute; height: 60px; right: 0; top:0; position: fixed; top: 0;"
+  >
+     <a href=""><i class="fa-brands fa-facebook text-white icon"></i> </a>
+     <a href=""><i class="fa-solid fa-phone-volume icon"></i></a>
+     <a href=""><i class="fa-solid fa-bell icon"></i></a>
+  </div>
+  <!-- navbar end -->
+</div>
+
+
+<div class="container">
+  <h1 class="fw-bold text-center" style="font-family: 'Nunito', sans-serif; color:#ff914d">
+    Du lịch giải trí – <span style="color: #ff914d;  font-family: 'Nunito', sans-serif;">Vui như ý!</span>
+  </h1>
+  <!-- tour list -->
+  <h2 class="text-center mb-5 fw-bold" style="color: #ff914d;">Danh Sách Tour  <br> 2025</h2>
+   <!-- Tour 1 -->
+ <div class="row g-4">
+  <div class="col-md-6 col-lg-6 pointer-event-link ">
+    <div class="card border-0 shadow-sm h-100 card__tour">
+      <img src="./assets/img/mykhe.jpg" class="card-img-top" alt="Mỹ Khê">
+      <div class="card-body text-center">
+        <h5 class="card-title">Xuyên Không Quanh Đà Nẵng</h5>
+        <p class="text-muted">Ưu đãi 1.500.000vnđ    🏷️ 25%</p>
+        <span class="badge bg-warning text-dark">Mới</span>
+        <span class=" text-dark m-3" >⭐⭐⭐⭐</span><br>
+        <a href="./tour/tour1.html" class="btn btn-warning btn-lg tour-btn mt-3">Xem hành trình chi tiết</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tour 2 -->
+  <div class="col-md-6 col-lg-6">
+    <div class="card border-0 shadow-sm h-100 card__tour">
+      <img src="./assets/img/hoian.jpg" class="card-img-top" alt="">
+      <div class="card-body text-center">
+        <h5 class="card-title">Đà Nẵng Đón Hội An</h5>
+        <p class="text-muted">Ưu đãi 1.000.000vnđ    🏷️ 50%</p>
+        <span class="badge bg-warning text-dark">Mới</span>
+        <span class=" text-dark m-3" >⭐⭐⭐⭐</span><br>
+        <a href="./tour/tour2.html" class="btn btn-warning btn-lg tour-btn mt-3">Xem hành trình chi tiết</a>
+      </div>
+    </div>
+  </div>
+ </div>
+
+
+ <section class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-4 text-warning">Đặt Tour Tại Đây</h2>
+    <div class="row g-4 container">
+      <div class="col-md-4">
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control nameInput" id="floatingInput" placeholder="" value="">
+          <label for="floatingInput" class="card-title">Họ và tên</label>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-4">
+        <select class="form-select selectTour" aria-label="Default select example " style="height: 59px;color: #ff914d;">
+          <optgroup label="Chọn tour">
+            <option value="0">Xuyên Không Quanh Đà Nẵng</option>
+          <option value="1">Đà Nẵng Đón Hội An</option>
+          </optgroup>
+        </select>
+      </div>
+      <div class="col-md-4 col-lg-4">
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control nameInput card-title timeInput"  id="date" placeholder="" value="">
+          <label for="floatingInput" class="card-title">Thời gian</label>
+        </div>
+      </div>
+      <div class="col-md-12 col-lg-12">
+        <select class="form-select timeTour" aria-label="Default select example " style="height: 59px;color: #ff914d;">
+          <optgroup label="Chọn khung giờ ">
+            <option value="0"> 🕓 06:00 – 08:00</option>
+            <option value="1"> 🕓 08:30 – 10:30</option>
+            <option value="2"> 🕓 14:00 – 16:00</option>
+            <option value="3"> 🕓 16:30 – 18:00</option>
+            <option value="4"> 🕓 18:30 – 20:00</option>
+
+          </optgroup>
+        </select>
+      </div>
+    </div>
+    <button class="btn btn-warning btn-lg tour-btn mt-4" id="tour-btn" >Đặt tour </button>
+  </div>
+</section>
+</div>
+
+
+
+
+<!-- end wrapper -->
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="./assets/js/index.js"></script>
+
+
+
+  
+<script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="./assets/bootstrap/js/bootstrap.esm.min.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="./assets/js/tour.js"></script>
+
+
+</body>
+  

@@ -1,0 +1,40 @@
+/* start nav style */
+.navbar {
+    background-color: var(--color-org) !important; 
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--color-yl);
+    border-bottom: 2px solid var(--color-yl);
+    border-radius: 1px;
+    width: max-content; 
+}
+a.nav-link {
+    color: var(--color-wh); 
+    width: max-content;
+
+}
+a.nav-link:hover {
+    color: var(--color-yl); 
+    color: var(--color-yl);
+    border-bottom: 2px solid var(--color-yl);
+    border-radius: 1px;
+    width: max-content;
+} 
+.nav-link:focus {
+    color: var(--color-yl);
+    border-bottom: 1px solid white;
+}
+
+
+.props-icon-wrapper {
+    height: 100%;
+    width: 20%;
+    justify-content: center;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22' /%3E%3C/svg%3E");
+  }
+  
+
+  

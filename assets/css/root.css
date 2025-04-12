@@ -1,0 +1,47 @@
+:root {
+    --color-org: #FF6B35; 
+    --color-yl: #FFD23F;
+    --color-solid-gr: #A0E8AF; 
+    --color-wh: #FFFFFF; 
+
+}
+
+
+.icon {
+    color: #eaeaea; 
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+.card-title  {
+    color:#ff914d; 
+}
+
+
+.card__tour:hover {
+    cursor: pointer;
+    transition: 0.2s all ease-in;
+    transform: translateY(-12px);
+}
+
+
+
+ 
+.tour-btn:hover  {
+
+    color: white;
+    background-color: #ff914d;
+    transition: 0.3s all ease-in-out;
+    transform: translateY(-3px)
+}
+
+.card-img-top {
+    height: 400px;
+    object-fit: cover;
+}
+
+.card-img-top.index {
+    height: 200px;
+    object-fit: cover;
+}

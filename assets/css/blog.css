@@ -1,0 +1,29 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff7f0;
+  color: #5f370e;
+}
+header {
+  background-color: #FF6B00;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+}
+.blog-card {
+  background: #ffe0c7;
+  border-left: 6px solid #e85d04;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+h2 {
+  color: #d9480f;
+}
+.blog-title {
+  color: #e65c00;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+

@@ -1,0 +1,22 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff7f0;
+    color: #5f370e;
+  }
+  
+  .bg-orange {
+    background-color: #ff6b00 !important;
+  }
+  
+  .text-orange {
+    color: #e65c00;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  footer {
+    font-size: 0.9rem;
+  }

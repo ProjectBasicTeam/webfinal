@@ -1,0 +1,16 @@
+.card__tour:hover {
+    cursor: pointer;
+    transition: 0.2s all ease-in;
+    transform: translateY(-12px);
+}
+
+
+
+ 
+.tour-btn:hover  {
+
+    color: white;
+    background-color: #ff914d;
+    transition: 0.3s all ease-in-out;
+    transform: translateY(-3px)
+}
