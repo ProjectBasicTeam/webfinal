@@ -5,14 +5,17 @@ const name = $(".nameInput");
 const tourSelect = $(".selectTour"); 
 const timeInput = $(".timeInput"); 
 const timeTour = $(".timeTour"); 
+const emailInput = $(".emailInput");
 // handle Send mail; 
-const sendMail = async (name, tour, date, time) => {
+const sendMail = async (name, tour, date, time, email) => {
 //   viết nội dung
     const contentMail =     `Chào bạn ${name}, chúng tôi đã xếp lịch cho bạn vào ngày ${date} <br> 
     trên khắp hành trình của tour ${tour}, chúng tôi rất mong bạn sẽ vui vẻ, thư giãn ở bất cứ điểm dừng trong tour <br> 
     thời gian đi là ${time} 
     chúng tôi hân hạnh được phục vụ quý khách, cảm ơn nhé. 
     `
+
+    const emailValue = email; 
 
     // gọi yêu cầu lên đường link gửi mail
     const response = await fetch('https://mailsendnode.onrender.com/email/send', {
@@ -21,7 +24,7 @@ const sendMail = async (name, tour, date, time) => {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        email: 'manhhd.24itb@vku.udn.vn',
+        email: emailValue,
         subject: 'Xác nhận đặt tour thành công',
         content: contentMail
       }),
@@ -47,7 +50,9 @@ const sendMail = async (name, tour, date, time) => {
     const timeInputValue  = timeInput.value;   // lấy thời gian (ngày - tháng - năm)
     const timeTourIndex =  timeTour.value;   // lấy thời gian (knung giờ đi tour)
     const timeofTour  = timeTour[timeTourIndex].text; 
-    sendMail(nameValue, tour, timeInputValue, timeofTour);  // gọi hàm sendMail ở trên
+    const emailValue = emailInput.value; 
+
+    sendMail(nameValue, tour, timeInputValue, timeofTour, emailValue);  // gọi hàm sendMail ở trên
     // const timeofTour 
   }
 
